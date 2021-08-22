@@ -65,8 +65,7 @@ https://templatemo.com/tm-531-reflux
                             <h9 style="color: #eeeeee">muhammadahmedraza98@gmail.com</h9>
                         </li>
                 <li>
-                  <a href="https://web.facebook.com/profile.php?id=100008312316056"
-                    ><i class="fa fa-facebook"></i
+                  <a href="https://web.facebook.com/profile.php?id=100008312316056"><i class="fa fa-facebook"></i
                   ></a>
                 </li>
                 <li>
@@ -77,6 +76,7 @@ https://templatemo.com/tm-531-reflux
                 </li>
               </ul>
             </div>
+          </div>
             <div class="copyright-text">
               <p>Copyright 2021 Ahmadraza</p>
             </div>
@@ -316,13 +316,12 @@ https://templatemo.com/tm-531-reflux
             <h2 style="margin-top: 50px">Contact Me</h2>
             <div class="line-dec"></div>
             <span
-              >Feel free to Contact me. Iam here to respond you.</span
-            >
+              >Feel free to Contact me. Iam here to respond you.</span>
           </div>
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="https://formspree.io/f/moqypynz" method="POST" id="ahmad">
+                <form id="contact" action="https://formspree.io/f/moqypynz" method="POST">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
@@ -338,9 +337,9 @@ https://templatemo.com/tm-531-reflux
                     </div>
                     <div class="col-md-6">
                       <fieldset>
-                        <input
-                          name="email"
-                          type="text"
+                        <input name="email"
+                          name="_replyto"
+                          type="email"
                           class="form-control"
                           id="email"
                           placeholder="Your email..."
@@ -368,13 +367,13 @@ https://templatemo.com/tm-531-reflux
                           class="form-control"
                           id="message"
                           placeholder="Your message..."
-                          required=""
-                        ></textarea>
+                          required="">
+                        </textarea>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="button" >
+                        <button type="submit" value="send" id="form-submit" class="button" >
                           Send Message
                         </button>
                       </fieldset>
@@ -382,11 +381,12 @@ https://templatemo.com/tm-531-reflux
                   </div>
                 </form>
               </div>
-              <div id="status"></div>
             </div>
           </div>
         </div>
+        <div id="status"></div>
       </section>
+    <script src="main.js"></script>
     </div>
 
     <!-- Scripts -->
@@ -399,8 +399,8 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
+    according to loftblog tut
+    $(".main-menu li:first").addClass("active");
 
       var showSection = function showSection(section, isAnimate) {
         var direction = section.replace(/#/, ""),
