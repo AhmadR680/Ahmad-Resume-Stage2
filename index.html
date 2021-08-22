@@ -14,10 +14,6 @@
     />
 
     <title>Ahmad Resume</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -202,7 +198,7 @@ https://templatemo.com/tm-531-reflux
           </div>
           <div class="row">
             <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
+              <form class="isotope-toolbar"></form>
                 <label
                   ><input
                     type="radio"
@@ -315,82 +311,44 @@ https://templatemo.com/tm-531-reflux
           <div class="section-heading">
             <h2 style="margin-top: 50px">Contact Me</h2>
             <div class="line-dec"></div>
-            <span
-              >Feel free to Contact me. Iam here to respond you.</span>
+            <span>Feel free to Contact me. Iam here to respond you.</span>
           </div>
-          <div class="row">
-            <div class="right-content">
               <div class="container">
-                <form id="contact" action="https://formspree.io/f/moqypynz" method="POST">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input name="email"
-                          name="_replyto"
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required="">
-                        </textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" value="send" id="form-submit" class="button" >
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
+               <div class="row">
+                  <div class="col-sm-4">
+                    <h3>Drop me a line!</h3>
+                      <hr>
+                         <address>
+                             <strong>Email:</strong> <a href="mailto:ahmadraza22586@gmail.com"> ahmadraza22586@gmail.com</a><br><br>
+                             <strong>Phone:</strong> +92-3328654866
+                      </address>
                   </div>
+                     <div class="col-sm-8 contact-form">
+                        <form  action="https://formspree.io/f/moqypynz" method="POST" id="ahmad">
+                            <div class="row">
+                               <div class="col-xs-6 col-md-6 form-group">
+                                   <input class="form-control" id="name" name="name" placeholder="Name" type="text"  />
+                                         </div>
+                                            <div class="col-xs-6 col-md-6 form-group">
+                                               <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" />
+                                            </div>
+                                      </div>
+                               <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                          <br />
+                          <div class="row">
+                      <div class="col-xs-12 col-md-12 form-group">
+                    <button class="btn btn-primary pull-right" type="submit">Submit</button>
                 </form>
+                </div>
               </div>
-            </div>
           </div>
         </div>
-        <div id="status"></div>
       </section>
-    <script src="main.js"></script>
     </div>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
+    <script src="main.js">
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
